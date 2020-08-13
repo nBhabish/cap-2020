@@ -1,0 +1,285 @@
+---
+title: "Career Accelerator Program"
+author: "Bhabishya Neupane"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    css: [default, lucy-fonts, lucy-fonts]
+    nature:
+      titleSlideClass: ["left", "middle", "inverse"]
+      ratio: 16:9
+      
+---
+background-image: url(https://images.unsplash.com/photo-1593786902073-86b681695a79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+```{r xaringan-tile-view, echo = FALSE}
+xaringanExtra::use_tile_view()
+```
+```{r xaringan-animate-css, echo = FALSE}
+xaringanExtra::use_animate_css()
+```
+class: middle, animated slideInRight fadeOutLeft
+
+## .big-text[About Me]  
+I am __Bhabishya Neupane__ and I am a   
+Research Scholar at  __Bureau of   
+Business Research (BBR)__
+
+__Majors__: Economics and Mathematics
+
+__Year__: Senior
+
+__From__: Dharan, Nepal
+???
+<img style="border-radius: 50%;" src="https://i.ibb.co/Df9hR6s/DSC-0138.jpg" width="200px"/>  
+---
+class: center,  animated slideInRight fadeOutLeft
+background-image: url(https://images.unsplash.com/photo-1574359219611-a3031f074b2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80)
+background-size: cover
+
+
+.center[
+# Stopping by to say Hi
+<img src="https://media.giphy.com/media/l10oBpeN4PbJLf9DPs/giphy.gif" style="width: 50%; display: block; margin:  auto;">
+]
+__I hope everyone is safe and doing good.__  
+
+__And even though I don't have a video feed today, I promise I am real live human who is stuck at home right now just like you all, sitting in front my computer.__
+
+---
+background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+
+class: right, animated slideInRight fadeOutLeft
+### Why Career Accelerator Program?
+
+
+
+
+---
+class: inverse, animated slideInRight fadeOutLeft
+
+background-image: url(https://images.unsplash.com/photo-1531171000775-75f0213ca8a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+
+# Spoiler Alert
+* __Please don't be mistaken, this is not a normal PowerPoint presentation.__ 
+   
+   
+* __All of these slides are created with the help of "xaringan" package in RStudio.__  
+   
+   
+* __All of the visualizations you'll see on this presentation is created using RStudio.__
+ 
+
+* __The Portfolio Website was created using R Markdown. Yes, I borrowed the theme, but that is how it has been in the R Community.__
+  
+    
+      
+  
+  
+  
+
+.right[
+.big-text[#To clear the air:] __This is not a paid promotion by RStudio   
+but rather an appreciation slide.__]
+
+---
+background-image: url(https://images.unsplash.com/photo-1516876617270-291a72282e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1825&q=80)
+background-size: cover
+
+class: bottom, inverse, animated slideInRight fadeOutLeft
+#Initial Plans
+
+.left[
+- Complete UChicago's CFSS R Coursework  
+
+- Explore Graduate Schools that would best fit my interest  
+
+- Finish my Linkedin Profile  
+
+- Craft a Portfolio Website]
+
+```{r Plan-chart, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ggthemes)
+df <- tribble(
+  ~Divided_Chunks, ~Number_of_hours, ~Category,
+ # --------------|-----------------|----------|
+ "Portfolio Website", 10, "Independent Project",
+ "UChicago's CFSS Course", 10, "Gain Technical Skills",
+ "Graduate School Research", 6, "Explore",
+ "LinkedIn", 4, "Promote your brand"
+)
+```
+
+---
+background-image: url(https://images.unsplash.com/photo-1578861377460-c4536383d637?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80)
+background-size: cover
+class:center, animated slideInRight fadeOutLeft
+####ALLOCATION OF MY HOURS
+___
+```{r include=FALSE}
+#install.packages("wesanderson")
+library(wesanderson)
+hours_plot <- df %>% 
+  mutate(Category = as.factor(Category)) %>% 
+  ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
+  geom_col(width = 0.3)+
+  labs(x = "Things I Decided to Accomplish", # Bold this and the line below
+       y = "Time I thought I would spend")+
+  coord_flip()+
+  scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
+```
+
+```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
+hours_plot+
+  theme_minimal()+
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "top",
+        rect = element_rect(fill = "transparent")
+        )
+```
+---
+background-image:url(https://images.unsplash.com/photo-1507778031059-d74c30b52585?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80)
+background-size: cover
+class: bottom, center, animated slideInRight fadeOutLeft, inverse
+# But, oops, this is actually how it went
+
+---
+class: center, animated slideInRight fadeOutLeft
+
+#### Time I Actually Spent Wrapping Up This Program
+___
+
+```{r Accomplishment-chart, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(ggthemes)
+df_end <- tribble(
+  ~Divided_Chunks, ~Number_of_hours, ~Category,
+ # --------------|-----------------|----------|
+ "Portfolio Website", 15, "Independent Project",
+ "UChicago's CFSS Course", 35, "Gain Technical Skills",
+ "Graduate School Research", 6, "Explore",
+ "LinkedIn", 4, "Promote your brand",
+ "Presentation w/ R", 4, "Promote your brand"
+)
+```
+
+```{r include=FALSE}
+#install.packages("wesanderson")
+library(wesanderson)
+hours_plot_end <- df_end %>% 
+  mutate(Category = as.factor(Category)) %>% 
+  ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
+  geom_col(width = 0.3)+
+  labs(x = "Accomplishments", # Bold this and the line below
+       y = "Time I Spent in Total")+
+  coord_flip()+
+  scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
+```
+
+```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
+hours_plot_end+
+  theme_minimal()+
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        legend.position = "top",
+        rect = element_rect(fill = "transparent")
+        )
+```
+
+---
+class: top, inverse, animated slideInRight fadeOutLeft
+background-image: url(https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+
+### Things I Learned About Myself
+---
+class: top, animated slideInRight fadeOutLeft
+background-image: url(https://images.unsplash.com/photo-1588856309830-caa524f54d0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1884&q=80)
+background-size: cover
+
+#Things I gained
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+---
+class: center, middle
+# Some of my visualizations
+# using R
+
+```{r echo = FALSE}
+
+```
+
+---
+class: center, middle, inverse, animated slideInRight fadeOutLeft
+# Viz 1
+```{r}
+
+```
+
+---
+class: center, middle, inverse, animated slideInRight fadeOutLeft
+
+# Viz 2
+
+---
+class: center, middle, inverse, animated slideInRight fadeOutLeft
+
+#Portfolio Website and Provide a link
+
+
+---
+class: animated slideInRight fadeOutLeft, inverse
+background-image: url(https://images.unsplash.com/photo-1534702795526-bab4dfcad657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+
+# Graduate School Research
+
+
+
+
+---
+class: bottom,animated slideInRight fadeOutLeft
+
+background-image: url(https://images.unsplash.com/photo-1590845947667-381579052389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+
+## In Summary, 
+## here's what I was able to accomplish
+
+
+---
+background-image: url(https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
+background-size: cover
+class: animated slideInRight fadeOutLeft, inverse, right
+
+### How I Leveraged my Clifton Strengths
+
+
+
+---
+class: bottom, left, animated slideInRight fadeOutLeft
+
+background-image: url(https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
+background-size: cover
+
+###Follow me at
+
+---
+
+
+
+
+
+
+
+
