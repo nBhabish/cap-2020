@@ -19,7 +19,7 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_animate_css()
 ```
 ```{r xaringan-webcam, include=FALSE}
-xaringanExtra::use_webcam()
+xaringanExtra::use_webcam(width = 300, height = 225)
 ```
 
 class: middle, animated slideInRight fadeOutLeft
