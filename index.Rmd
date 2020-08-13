@@ -18,6 +18,10 @@ xaringanExtra::use_tile_view()
 ```{r xaringan-animate-css, echo = FALSE}
 xaringanExtra::use_animate_css()
 ```
+```{r xaringan-webcam, include=FALSE}
+xaringanExtra::use_webcam()
+```
+
 class: middle, animated slideInRight fadeOutLeft
 
 ## .big-text[About Me]  
