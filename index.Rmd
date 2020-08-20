@@ -52,12 +52,12 @@ background-size: cover
 
 
 .center[
-# Stopping by to say Hi
+#<span style="color:darkblue"> Stopping by to say Hi </span>
 <img src="https://media.giphy.com/media/l10oBpeN4PbJLf9DPs/giphy.gif" style="width: 50%; display: block; margin:  auto;">
 ]
-__I hope everyone is safe and doing well.__  
+__<span style="color:darkblue">I hope everyone is safe and doing well. </span>__  
 
-__And even though I don't have a video feed today, I promise I am real live human who is stuck at home right now just like you all, sitting in front my computer.__
+__<span style="color:darkblue">And even though I don't have a video feed today, I promise I am real live human who is stuck at home right now just like you all, sitting in front of my computer </span>.__
 
 ---
 background-image: url(https://images.unsplash.com/photo-1509537257950-20f875b03669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
