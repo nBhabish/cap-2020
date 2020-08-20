@@ -42,9 +42,6 @@ game during my freshman year.
 __Favorite Experience at College of Business__:  
 Global Cafe 2019.
 
-
-???
-<img style="border-radius: 50%;" src="https://i.ibb.co/Df9hR6s/DSC-0138.jpg" width="200px"/>  
 ---
 class: center,  animated slideInRight fadeOutLeft
 background-image: url(https://images.unsplash.com/photo-1574359219611-a3031f074b2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80)
