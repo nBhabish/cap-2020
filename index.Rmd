@@ -185,8 +185,8 @@ df_end <- tribble(
  "Portfolio Website", 15, "Independent Project",
  "UChicago's CFSS Course", 35, "Gain Technical Skills",
  "Graduate School Research", 6, "Explore",
- "LinkedIn", 4, "Promote your brand",
- "Presentation w/ R", 4, "Promote your brand"
+ "LinkedIn", 0, "Promote your brand",
+ "Presentation w/ R", 10, "Promote your brand"
 )
 ```
 
@@ -243,6 +243,8 @@ background-size: cover
 
 - __Got better at Exploratory Data Analysis (EDA)__
 
+- __Got better at making presentations like this and pushing it up online__
+
 
 ---
 class: center, middle, inverse, animated slideInRight fadeOutLeft
@@ -271,7 +273,7 @@ class: center, middle, inverse, animated slideInRight fadeOutLeft
 class: bottom, center, animated slideInRight fadeOutLeft
 background-image:url(https://i.ibb.co/qLH75CT/Screen-Shot-2020-08-20-at-8-30-13-AM.png)
 background-size:cover
-####Link: http://nbhabishya.rbind.io
+####http://nbhabishya.rbind.io
 
 ---
 class: animated slideInRight fadeOutLeft, inverse, bottom
