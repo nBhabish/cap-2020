@@ -282,15 +282,15 @@ background-size: cover
 
 #<span style="color:darkorange"> Researching Graduate School</span>
 
--<span style="color:darkorange"> __Figured out what I wanted to do for graduate school__ </span>
+- <span style="color:darkorange"> __Figured out what I wanted to do for graduate school__ </span>
 
--<span style="color:darkorange"> __Spent at least 1 hour a week looking at schools that I was interested in__</span>
+- <span style="color:darkorange"> __Spent at least 1 hour a week looking at schools that I was interested in__</span>
 
--<span style="color:darkorange"> __Reached out to graduate schools to learn more about their programs__</span>
+- <span style="color:darkorange"> __Reached out to graduate schools to learn more about their programs__</span>
 
--<span style="color:darkorange"> __Shortlisted 10 schools that I was interested in__</span>
+- <span style="color:darkorange"> __Shortlisted 10 schools that I was interested in__</span>
 
--<span style="color:darkorange"> __Managed to set up an informational interview with enrollment coach from one of the schools that I had looked into__</span>
+- <span style="color:darkorange"> __Managed to set up an informational interview with enrollment coach from one of the schools that I had looked into__</span>
 
 
 
@@ -315,6 +315,20 @@ background-size: cover
 ####<span style ="color:darkorange"> Behind the scenes
 ####<span style ="color:darkorange">workflow  of this presentation </span>
 ]
+---
+class:animated slideInRight fadeOutLeft, middle
+
+# <span style="color:skyblue">Slides Hack</span>
+
+- __Press <span style="color:darkorange">"O"</span> for the tile view and skip to any slide that you want__
+
+- __Press <span style="color:darkorange">"W"</span> to initiate your webcam on the slides__
+  - __I think this makes recording presentation easier__
+  
+  
+- __Press <span style="color:darkorange">"P"</span> and <span style="color:darkorange">"T"</span> to time yourself when going over slides__  
+
+
 ---
 background-image: url(https://images.unsplash.com/photo-1446501356021-84cf6b450d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
 background-size: cover
