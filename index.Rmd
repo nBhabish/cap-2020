@@ -403,7 +403,7 @@ class:animated slideInRight fadeOutLeft, middle
 
 - __Press <span style="color:darkorange">"O"</span> for the tile view and skip to any slide that you want__
 
-- __Press <span style="color:darkorange">"W"</span> to initiate your webcam on the slides, and to undo press <span style="color:darkorange">"W"</span> again__
+- __Press <span style="color:darkorange">"W"</span> to initiate your webcam on the slides, and press <span style="color:darkorange">"W"</span> again to undo it__
   - __I think this makes recording presentation easier__
   
   
