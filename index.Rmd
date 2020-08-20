@@ -9,6 +9,7 @@ output:
       titleSlideClass: ["left", "middle", "inverse"]
       ratio: 16:9
       
+      
 ---
 background-image: url(https://images.unsplash.com/photo-1593786902073-86b681695a79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
@@ -22,18 +23,31 @@ xaringanExtra::use_animate_css()
 xaringanExtra::use_webcam(width = 300, height = 225)
 ```
 
-class: middle, animated slideInRight fadeOutLeft
+class: animated slideInRight fadeOutLeft
 
 ## .big-text[About Me]  
 I am __Bhabishya Neupane__ and I am a   
-Research Scholar at  __Bureau of   
+Research Scholar at the __Bureau of   
 Business Research (BBR)__
 
 __Majors__: Economics and Mathematics
 
 __Year__: Senior
 
-__From__: Dharan, Nepal
+__From__: Nepal
+
+__Favorite Experience at UNL__ : First football  
+game during my freshman year.
+
+__Favorite Experience at College of Business__:  
+Global Cafe 2019.
+
+.right[
+__Why UNL?__
+
+
+]
+
 ???
 <img style="border-radius: 50%;" src="https://i.ibb.co/Df9hR6s/DSC-0138.jpg" width="200px"/>  
 ---
@@ -46,17 +60,32 @@ background-size: cover
 # Stopping by to say Hi
 <img src="https://media.giphy.com/media/l10oBpeN4PbJLf9DPs/giphy.gif" style="width: 50%; display: block; margin:  auto;">
 ]
-__I hope everyone is safe and doing good.__  
+__I hope everyone is safe and doing well.__  
 
 __And even though I don't have a video feed today, I promise I am real live human who is stuck at home right now just like you all, sitting in front my computer.__
 
 ---
-background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+background-image: url(https://images.unsplash.com/photo-1509537257950-20f875b03669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
 
-class: right, animated slideInRight fadeOutLeft
-### Why Career Accelerator Program?
 
+
+class: center, animated slideInRight fadeOutLeft, inverse
+# Why Career Accelerator Program?
+<style>
+
+.right2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+</style>
+
+####.right2[ The moment I read the email about the program, I thought it would be something that would keep me busy during the pandemic. I believed participating in this program would give me an opportunity to work on things that I thought I would work on if I had some extra time. Not only that, just signing up would keep me accountable and help me stay motivated because it had something to do with the college. Rightfully so, it did and I am glad that I decided to participate in the program. The things that I was able to accomplish and the things that I was able to further explore have made me realize how valuable my participation turned out to be. And, I can not stress enough how much Lauren Stehlik, my coach, help me stay motivated.]
 
 
 
@@ -68,9 +97,12 @@ background-size: cover
 
 # Spoiler Alert
 * __Please don't be mistaken, this is not a normal PowerPoint presentation.__ 
+
    
-   
-* __All of these slides are created with the help of "xaringan" package in RStudio.__  
+* __All of these slides are created with the help of "Xaringan" package in RStudio.__  
+
+
+* __R is a programming language and free software environment or statistical computing and graphics.__
    
    
 * __All of the visualizations you'll see on this presentation is created using RStudio.__
@@ -92,17 +124,16 @@ but rather an appreciation slide.__]
 background-image: url(https://images.unsplash.com/photo-1516876617270-291a72282e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1825&q=80)
 background-size: cover
 
-class: bottom, inverse, animated slideInRight fadeOutLeft
+class: inverse, animated slideInRight fadeOutLeft
 #Initial Plans
 
-.left[
 - Complete UChicago's CFSS R Coursework  
 
 - Explore Graduate Schools that would best fit my interest  
 
 - Finish my Linkedin Profile  
 
-- Craft a Portfolio Website]
+- Craft a Portfolio Website
 
 ```{r Plan-chart, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
@@ -121,7 +152,6 @@ df <- tribble(
 background-image: url(https://images.unsplash.com/photo-1578861377460-c4536383d637?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80)
 background-size: cover
 class:center, animated slideInRight fadeOutLeft
-####ALLOCATION OF MY HOURS
 ___
 ```{r include=FALSE}
 #install.packages("wesanderson")
@@ -130,7 +160,8 @@ hours_plot <- df %>%
   mutate(Category = as.factor(Category)) %>% 
   ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
   geom_col(width = 0.3)+
-  labs(x = "Things I Decided to Accomplish", # Bold this and the line below
+  labs(title = "HOW I PLANNED ON WORKING ON THIS PROJECT",
+       x = "Things I Decided to Accomplish", # Bold this and the line below
        y = "Time I thought I would spend")+
   coord_flip()+
   scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
@@ -139,22 +170,14 @@ hours_plot <- df %>%
 ```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
 hours_plot+
   theme_minimal()+
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        legend.position = "top",
-        rect = element_rect(fill = "transparent")
-        )
+  theme(plot.title = element_text(hjust = 0.5, face ="bold", size = 20, vjust = 0.001),
+        axis.title.x = element_text(face = "bold", size = 15, vjust = 0.01),
+        axis.title.y = element_text(face = "bold", size = 15, vjust = 0.01))
 ```
 ---
-background-image:url(https://images.unsplash.com/photo-1507778031059-d74c30b52585?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80)
-background-size: cover
-class: bottom, center, animated slideInRight fadeOutLeft, inverse
-# But, oops, this is actually how it went
-
----
 class: center, animated slideInRight fadeOutLeft
+background-size: cover
 
-#### Time I Actually Spent Wrapping Up This Program
 ___
 
 ```{r Accomplishment-chart, echo=FALSE, message=FALSE, warning=FALSE}
@@ -178,7 +201,8 @@ hours_plot_end <- df_end %>%
   mutate(Category = as.factor(Category)) %>% 
   ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
   geom_col(width = 0.3)+
-  labs(x = "Accomplishments", # Bold this and the line below
+  labs(title = "TIME I ACTUALLY SPENT FINISHING UP",
+       x = "Accomplishments", # Bold this and the line below
        y = "Time I Spent in Total")+
   coord_flip()+
   scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
@@ -187,35 +211,47 @@ hours_plot_end <- df_end %>%
 ```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
 hours_plot_end+
   theme_minimal()+
-  theme(panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        legend.position = "top",
-        rect = element_rect(fill = "transparent")
-        )
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 20, vjust = 0.001),
+        axis.title.x = element_text(face = "bold", size = 15, vjust = 0.01),
+        axis.title.y = element_text(face = "bold", size = 15))+
+  scale_y_continuous(breaks = c(0,5,10,15,20,25,30,35))
 ```
 
 ---
-class: top, inverse, animated slideInRight fadeOutLeft
-background-image: url(https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+class: middle, animated slideInRight fadeOutLeft
+background-image: url(https://images.unsplash.com/photo-1493957988430-a5f2e15f39a3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
 
-### Things I Learned About Myself
+# Things I Learned About Myself
+
+* __ I have realized that I am an avid learner.__
+
+* __I have figured out that managing my time helps me stay on top of things.__
+
+* __I have realized that getting started in just about anything will help things get done.__
+
+* __Taking breaks at times helps me stay creative.__
+
 ---
-class: top, animated slideInRight fadeOutLeft
-background-image: url(https://images.unsplash.com/photo-1588856309830-caa524f54d0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1884&q=80)
+class: middle, animated slideInRight fadeOutLeft
+background-image: url(https://images.unsplash.com/photo-1506619216599-9d16d0903dfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80)
 background-size: cover
 
 #Things I gained
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+
+- __Got better at data visualization using__
+
+- __Got better at spatial visualization__
+
+- __Got better at creating shiny dashboards__
+
+- __Got better at Exploratory Data Analysis (EDA)__
+
+
 ---
-class: center, middle
+class: center, middle, inverse
+background-image: url(https://images.unsplash.com/photo-1487088678257-3a541e6e3922?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80)
+background-size: cover
 # Some of my visualizations
 # using R
 
@@ -236,10 +272,10 @@ class: center, middle, inverse, animated slideInRight fadeOutLeft
 # Viz 2
 
 ---
-class: center, middle, inverse, animated slideInRight fadeOutLeft
-
-#Portfolio Website and Provide a link
-
+class: bottom, center, animated slideInRight fadeOutLeft
+background-image:url(https://i.ibb.co/qLH75CT/Screen-Shot-2020-08-20-at-8-30-13-AM.png)
+background-size:cover
+####Portfolio Website: http://nbhabishya.rbind.io
 
 ---
 class: animated slideInRight fadeOutLeft, inverse
@@ -252,35 +288,29 @@ background-size: cover
 
 
 ---
-class: bottom,animated slideInRight fadeOutLeft
-
-background-image: url(https://images.unsplash.com/photo-1590845947667-381579052389?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-image: url(https://images.unsplash.com/photo-1580934174026-8142803ebb5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
+class: animated slideInRight fadeOutLeft, middle
 
-## In Summary, 
-## here's what I was able to accomplish
+# How I Leveraged my Clifton Strengths
 
-
----
-background-image: url(https://images.unsplash.com/photo-1512314889357-e157c22f938d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
-background-size: cover
-class: animated slideInRight fadeOutLeft, inverse, right
-
-### How I Leveraged my Clifton Strengths
-
+__My top five clifton strengths were futuristic, learner, consistent, __
 
 
 ---
 class: bottom, left, animated slideInRight fadeOutLeft
 
-background-image: url(https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
+background-image: url(https://images.unsplash.com/photo-1493606278519-11aa9f86e40a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
 
 ###Follow me at
 
 ---
+background-image: url(https://images.unsplash.com/photo-1502622796232-e88458466c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80)
+background-size: cover
+class:animated slideInRight fadeOutLeft, center, middle
 
-
+# Thank You!
 
 
 
