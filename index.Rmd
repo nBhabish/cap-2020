@@ -295,15 +295,101 @@ background-size: cover
 
 
 ---
-background-image: url(https://images.unsplash.com/photo-1592885375424-571ea45c29fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3152&q=80)
+background-image: url(https://images.unsplash.com/photo-1586957960362-65815d739527?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
 background-size: cover
-class: animated slideInRight fadeOutLeft
-
-# Leveraging my Clifton Strengths
-
-__My top five clifton strengths were futuristic, learner, consistent, __
+class: animated slideInRight fadeOutLeft, 
 
 
+<style>
+.right2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -150%);
+}
+
+</style>
+.right2[<span style="color:midnightblue">__Top five Clifton Strengths__</span>  
+]
+
+<style>
+.right3 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -120%);
+}
+
+</style>
+
+.right3[<span style="color:midnightblue">- Futuristic</span>]
+
+
+<style>
+.right4 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
+}
+
+</style>
+
+.right4[<span style="color:midnightblue">- Consistency</span>]
+
+
+<style>
+.right5 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 60%);
+}
+</style>
+
+.right5[<span style="color:midnightblue">- Strategic</span>]
+
+<style>
+.right6 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 150%);
+}
+</style>
+.right6[<span style="color:midnightblue">- Learner</span>]
+
+<style>
+.right7 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 240%);
+}
+</style>
+.right7[<span style="color:midnightblue">- Significance</span>]
+---
+class: class:animated slideInRight fadeOutLeft, middle, center
+#<span style="color:Midnightblue"> Leveraging my Clifton Strengths</span>
+
+
+<span style="color:Midnightblue"> __The strength that I leveraged the most throughout this program was learner and strategic. I would find myself going above and beyond learning different things about Data Visualization.__  </span>
+
+<span style="color:Midnightblue">__For instance, I stumbled upon an article that had mentioned about R4DS (R for Data Science) Slack community. I think being a part of that community has been one of the surprises that I didn't see coming. __</span>
+
+<span style="color:Midnightblue">__I did not think that I would have finished this project but being strategic at the very beginning allowed me to divide my projects in chunks, eventually making it easier for me to get through smaller chunks on a daily basis. __ </span>
 ---
 class: right, animated slideInRight fadeOutLeft
 
@@ -316,6 +402,7 @@ background-size: cover
 ####<span style ="color:darkorange">workflow  of this presentation </span>
 ]
 ---
+
 class:animated slideInRight fadeOutLeft, middle
 
 # <span style="color:skyblue">Slides Hack</span>
