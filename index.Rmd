@@ -77,7 +77,7 @@ class: center, animated slideInRight fadeOutLeft, inverse
 
 </style>
 
-####.right10[ The moment I read the email about the program, I thought it would be a great oppportunity that would keep me busy during the pandemic. I believed participating in this program would give me an opportunity to work on things that I thought I would work on if I had some extra time. Not only that, just signing up would keep me accountable and help me stay motivated because. Rightfully so, it did and I am glad that I decided to participate in the program. The things that I was able to accomplish and the things that I was able to further explore have made me value this program in a different light. And, I can not stress enough how much  <span style="color:orange">Lauren Stehlik</span>, my coach, helped me stay motivated and wrap up this project.]
+####.right10[ As soon as I learned more about this program, I thought it would be an excellent opportunity for me to stay busy during the pandemic. I believed participating in this program would allow me to work on things that I thought I would work on if I had some extra time. Not only that, just signing up would keep me accountable and help me stay motivated. Rightfully so, it did, and I am glad that I decided to participate in the program. The things that I was able to accomplish and the things that I was able to explore further have made me value this program in a different light. And, I can not stress enough how much  <span style="color:orange">Lauren Stehlik</span>, my coach, helped me stay motivated to wrap up this project.]
 
 ---
 class: inverse, animated slideInRight fadeOutLeft
