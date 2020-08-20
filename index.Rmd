@@ -276,12 +276,21 @@ background-size:cover
 ####Link: http://nbhabishya.rbind.io
 
 ---
-class: animated slideInRight fadeOutLeft, inverse
-background-image: url(https://images.unsplash.com/photo-1534702795526-bab4dfcad657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+class: animated slideInRight fadeOutLeft, inverse, bottom
+background-image: url(https://images.unsplash.com/photo-1482398650355-d4c6462afa0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
 
-# Graduate School Research
+#<span style="color:darkorange"> Researching Graduate School</span>
 
+-<span style="color:darkorange"> __Figured out what I wanted to do for graduate school__ </span>
+
+-<span style="color:darkorange"> __Spent at least 1 hour a week looking at schools that I was interested in__</span>
+
+-<span style="color:darkorange"> __Reached out to graduate schools to learn more about their programs__</span>
+
+-<span style="color:darkorange"> __Shortlisted 10 schools that I was interested in__</span>
+
+-<span style="color:darkorange"> __Managed to set up an informational interview with enrollment coach from one of the schools that I had looked into__</span>
 
 
 
