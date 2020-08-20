@@ -298,10 +298,11 @@ class: right, animated slideInRight fadeOutLeft
 background-image: url(https://i.ibb.co/b2kms1S/Screen-Shot-2020-08-20-at-9-39-38-AM.png)
 background-size: cover
 
-.pull-right[  
-####Behind the scenes  
-####workflow  of this presentation]
 
+.pull-right[
+####<span style ="color:darkorange"> Behind the scenes
+####<span style ="color:darkorange">workflow  of this presentation </span>
+]
 ---
 background-image: url(https://images.unsplash.com/photo-1446501356021-84cf6b450d07?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)
 background-size: cover
