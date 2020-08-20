@@ -125,8 +125,6 @@ class: inverse, animated slideInRight fadeOutLeft
 
 - Explore Graduate Schools that would best fit my interest  
 
-- Finish my Linkedin Profile  
-
 - Craft a Portfolio Website
 
 ```{r Plan-chart, echo=FALSE, message=FALSE, warning=FALSE}
@@ -138,7 +136,6 @@ df <- tribble(
  "Portfolio Website", 10, "Independent Project",
  "UChicago's CFSS Course", 10, "Gain Technical Skills",
  "Graduate School Research", 6, "Explore",
- "LinkedIn", 4, "Promote your brand"
 )
 ```
 
@@ -183,7 +180,6 @@ df_end <- tribble(
  "Portfolio Website", 15, "Independent Project",
  "UChicago's CFSS Course", 35, "Gain Technical Skills",
  "Graduate School Research", 6, "Explore",
- "LinkedIn", 0, "Promote your brand",
  "Presentation w/ R", 10, "Promote your brand"
 )
 ```
