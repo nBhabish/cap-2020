@@ -252,16 +252,24 @@ background-size: cover
 ```
 
 ---
-class: center, middle, inverse, animated slideInRight fadeOutLeft
-# Viz 1
-```{r}
-
-```
+class: center, middle, animated slideInRight fadeOutLeft
+# Famous iris dataset visualization 
 
 ---
-class: center, middle, inverse, animated slideInRight fadeOutLeft
+class: center, middle, animated slideInRight fadeOutLeft
+background-image: url(https://i.ibb.co/cLPm5Sd/file-show.png)
+background-size: contain
 
-# Viz 2
+---
+class: center, middle, animated slideInRight fadeOutLeft
+# Time-Series New Cases Covid-19 Chart
+---
+class: center, middle, animated slideInRight fadeOutLeft
+background-image:url(https://i.ibb.co/BNFJMbG/file-show.png)
+background-size:contain
+
+
+
 
 ---
 class: bottom, center, animated slideInRight fadeOutLeft
@@ -305,7 +313,7 @@ class: animated slideInRight fadeOutLeft,
 }
 
 </style>
-.right2[<span style="color:midnightblue">__Top five Clifton Strengths__</span>  
+.right2[<span style="color:midnightblue">__My Top five Clifton Strengths__</span>  
 ]
 
 <style>
