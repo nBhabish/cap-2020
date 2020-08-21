@@ -118,16 +118,25 @@ but rather an appreciation slide.__]
 background-image: url(https://images.unsplash.com/photo-1516876617270-291a72282e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1825&q=80)
 background-size: cover
 
-class: inverse, animated slideInRight fadeOutLeft
+class: inverse, animated slideInRight fadeOutLeft, bottom
 #Initial Plans
 
-- Complete UChicago's CFSS R Coursework  
+- Complete UChicago's CFSS R Coursework 
 
 - Explore Graduate Schools that would best fit my interest  
 
 - Craft a Portfolio Website
 
-```{r Plan-chart, echo=FALSE, message=FALSE, warning=FALSE}
+---
+
+```{r echo = FALSE, message = FALSE}
+#install.packages("showtext")
+library(sysfonts)
+library(showtext)
+```
+
+class: middle, center, animated slideInRight fadeOutLeft
+```{r resolving-chart, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(ggthemes)
 df <- tribble(
@@ -136,44 +145,50 @@ df <- tribble(
  "Portfolio Website", 10, "Independent Project",
  "UChicago's CFSS Course", 10, "Gain Technical Skills",
  "Graduate School Research", 6, "Explore",
-)
+) 
 ```
 
----
-background-image: url(https://images.unsplash.com/photo-1578861377460-c4536383d637?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2978&q=80)
-background-size: cover
-class:center, animated slideInRight fadeOutLeft
-___
 ```{r include=FALSE}
 #install.packages("wesanderson")
 library(wesanderson)
+font_add_google("Schoolbell","Schoolbell")
+showtext_auto()
 hours_plot <- df %>% 
   mutate(Category = as.factor(Category)) %>% 
   ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
   geom_col(width = 0.3)+
-  labs(title = "HOW I PLANNED ON WORKING ON THIS PROJECT",
-       x = "Things I Decided to Accomplish", # Bold this and the line below
-       y = "Time I thought I would spend")+
+  labs(title = "HOURS I THOUGHT I WOULD SPEND",
+       x = "Things I Planned to Accomplish", # Bold this and the line below
+       y = "Hours")+
   coord_flip()+
-  scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
+  scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 3))
+```
+
+```{r echo = FALSE}
+knitr::opts_chunk$set(fig.showtext = TRUE)
 ```
 
 ```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
 hours_plot+
   theme_minimal()+
-  theme(plot.title = element_text(hjust = 0.5, face ="bold", size = 20, vjust = 0.001),
-        axis.title.x = element_text(face = "bold", size = 15, vjust = 0.01),
-        axis.title.y = element_text(face = "bold", size = 15, vjust = 0.01))
+  theme(text = element_text(family = "Schoolbell"),
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 30, vjust = 0.5),
+        axis.title.x = element_text(face = "bold", size = 20, vjust = 0.01),
+        axis.title.y = element_text(face = "bold", size = 20),
+        legend.title = element_text(size = 20),
+        legend.text = element_text(size=15),
+        axis.text.x = element_text(face = "bold", size=15),
+        axis.text.y = element_text(face = "bold", size=15))
 ```
----
-class: center, animated slideInRight fadeOutLeft
-background-size: cover
 
-___
+---
+class: center, animated slideInRight fadeOutLeft, middle
 
 ```{r Accomplishment-chart, echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(ggthemes)
+library(sysfonts)
+library(showtext)
 df_end <- tribble(
   ~Divided_Chunks, ~Number_of_hours, ~Category,
  # --------------|-----------------|----------|
@@ -186,14 +201,16 @@ df_end <- tribble(
 
 ```{r include=FALSE}
 #install.packages("wesanderson")
-library(wesanderson)
+#library(wesanderson)
+#font_add_google("Schoolbell","Schoolbell")
+#showtext_auto()
 hours_plot_end <- df_end %>% 
   mutate(Category = as.factor(Category)) %>% 
   ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
   geom_col(width = 0.3)+
-  labs(title = "TIME I ACTUALLY SPENT FINISHING UP",
+  labs(title = "HOURS I ACTUALLY SPENT",
        x = "Accomplishments", # Bold this and the line below
-       y = "Time I Spent in Total")+
+       y = "Hours")+
   coord_flip()+
   scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
 ```
@@ -201,9 +218,14 @@ hours_plot_end <- df_end %>%
 ```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
 hours_plot_end+
   theme_minimal()+
-  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 20, vjust = 0.001),
-        axis.title.x = element_text(face = "bold", size = 15, vjust = 0.01),
-        axis.title.y = element_text(face = "bold", size = 15))+
+  theme(text = element_text(family = "Schoolbell"),
+        plot.title = element_text(hjust = 0.5, face = "bold", size = 30, vjust = 0.5),
+        axis.title.x = element_text(face = "bold", size = 20, vjust = 0.01),
+        axis.title.y = element_text(face = "bold", size = 20),
+        legend.title = element_text(size = 20),
+        legend.text = element_text(size=15),
+        axis.text.x = element_text(face = "bold", size=15),
+        axis.text.y = element_text(face = "bold", size=15))+
   scale_y_continuous(breaks = c(0,5,10,15,20,25,30,35))
 ```
 
@@ -229,7 +251,7 @@ background-size: cover
 
 #Things I gained
 
-- __Got better at data visualization using__
+- __Got better at data visualization using RStudio__
 
 - __Got better at spatial visualization__
 
