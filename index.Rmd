@@ -257,7 +257,7 @@ class: center, middle, animated slideInRight fadeOutLeft
 
 ---
 class: center, middle, animated slideInRight fadeOutLeft
-background-image: url(https://i.ibb.co/cLPm5Sd/file-show.png)
+background-image: url(https://i.ibb.co/cCQ0thf/iris.png)
 background-size: contain
 
 ---
@@ -265,7 +265,7 @@ class: center, middle, animated slideInRight fadeOutLeft
 # <span style ="color:steelblue">New Covid-19 Cases Chart Time-Series</span>
 ---
 class: center, middle, animated slideInRight fadeOutLeft
-background-image:url(https://i.ibb.co/BNFJMbG/file-show.png)
+background-image:url(https://i.ibb.co/rtBZBJQ/covid-19.png)
 background-size:contain
 
 
