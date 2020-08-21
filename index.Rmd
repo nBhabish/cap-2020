@@ -81,19 +81,19 @@ class: center, animated slideInRight fadeOutLeft, inverse
 Thank you, <span style="color:orange">Lauren!</span>]
 
 ---
-class: inverse, animated slideInRight fadeOutLeft
+class: animated slideInRight fadeOutLeft
 
-background-image: url(https://images.unsplash.com/photo-1531171000775-75f0213ca8a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-image: url(https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 background-size: cover
 
-# Spoiler Alert
+# <span style ="color:white">Spoiler Alert</span>
 * __Please don't be mistaken, this is not a normal PowerPoint presentation.__ 
 
    
-* __All of these slides were created with the help of <span style="color:darkred">"Xaringan"</span> package in RStudio.__ 
+* __All of these slides were created with the help of <span style="color:white">"Xaringan"</span> package in RStudio.__ 
 
 
-* __<span style="color:darkblue">RStudio</span> is an IDE for R (Integrated Development Environment).__
+* __<span style="color:white">RStudio</span> is an IDE for R (Integrated Development Environment).__
 
 
 * __R is a programming language and free software environment on statistical computing and graphics.__
@@ -102,7 +102,7 @@ background-size: cover
 * __All of the visualizations you'll see on this presentation is created using RStudio.__
  
 
-* __The Portfolio Website was created using R Markdown and a package called <span style = "color:darkgreen">"Blogdown"</span>. Yes, I borrowed the theme, but that is how it has been in the R Community.__
+* __The Portfolio Website was created using R Markdown and a package called <span style = "color:white">"Blogdown"</span>. Yes, I borrowed the theme, but that is how it has been in the R Community.__
   
     
       
@@ -111,8 +111,7 @@ background-size: cover
   
 
 .right[
-.big-text[#To clear the air:] __This is not a paid promotion by RStudio   
-but rather an appreciation slide.__]
+.big-text[#<span style ="color:white">To clear the air:</span>] __<span style = "color:aliceblue">This is not a paid promotion by RStudio __]
 
 ---
 background-image: url(https://images.unsplash.com/photo-1516876617270-291a72282e2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1825&q=80)
@@ -201,9 +200,9 @@ df_end <- tribble(
 
 ```{r include=FALSE}
 #install.packages("wesanderson")
-#library(wesanderson)
-#font_add_google("Schoolbell","Schoolbell")
-#showtext_auto()
+library(wesanderson)
+font_add_google("Schoolbell","Schoolbell")
+showtext_auto()
 hours_plot_end <- df_end %>% 
   mutate(Category = as.factor(Category)) %>% 
   ggplot(aes(Divided_Chunks, Number_of_hours, group = Category, fill = Category))+
