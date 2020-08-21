@@ -215,6 +215,10 @@ hours_plot_end <- df_end %>%
   scale_fill_manual(name = "Accelerator Tracks",values = wes_palette("Royal1", n = 4))
 ```
 
+```{r echo = FALSE}
+knitr::opts_chunk$set(fig.showtext = TRUE)
+```
+
 ```{r echo=FALSE, fig.retina=3, fig.width=10, fig.height=5}
 hours_plot_end+
   theme_minimal()+
@@ -269,9 +273,6 @@ background-size: cover
 # Some of my visualizations
 # using R
 
-```{r echo = FALSE}
-
-```
 
 ---
 class: center, middle, animated slideInRight fadeOutLeft
